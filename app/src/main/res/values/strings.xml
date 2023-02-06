@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name" translatable="false">Vishwakarma Matrimony</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="newregistration">New Registration</string>
+    <string name="select_category">Select Category</string>
+    <string name="bride">Bride</string>
+    <string name="groom">Groom</string>
+    <string name="fullname">Full Name</string>
+    <string name="dob">Date of Birth Age</string>
+    <string name="email">Email id</string>
+    <string name="mobile">Mobile</string>
+    <string name="alternativenumber">Alternate Number</string>
+    <string name="have_janmpatrika">having JamnPatrika?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="height">Height</string>
+    <string name="skin_color">Skin Colour</string>
+    <string name="gotra">Gotra</string>
+    <string name="glasswearing">Are you wearing glasses?</string>
+    <string name="qualification">Qualification</string>
+    <string name="job_bussiness_details">Job / Bussiness Details</string>
+    <string name="job_bussiness_address">Job / Bussiness Address</string>
+    <string name="monthly_income">Annual income</string>
+    <string name="local_current_address">Local/Current Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="is_wish_to_see_janm_patrika">Is Wish To See Janm Patrika?</string>
+    <string name="are_you_mangal">are you Mangal?</string>
+    <string name="art_favolrite_hobbies">Art /Favolrite/Hobbies</string>
+    <string name="expectations_from_partner">Expectations from Partner</string>
+    <string name="father_gardian_name_and_address">Father/Gardian Name and Address</string>
+    <string name="father_gardian_occupation">Father/Gardian Occupation</string>
+    <string name="mother_s_full_name_before_marriage">Mother\'s full name before marriage</string>
+    <string name="how_many_brothers_you_have">How many brothers you have ?</string>
+    <string name="brother_s_marital_status">Brother\'s marital status</string>
+    <string name="how_many_sister_you_have">How many sister you have?</string>
+    <string name="sister_s_marital_status">Sister\'s Marital status</string>
+    <string name="uncle_s_clan">Uncle\'s clan</string>
+    <string name="enter_password">Enter password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="dob_only">DOB</string>
+    <string name="age">Age</string>
+    <string name="enter_your_register_mobile_number">Enter your register mobile number.</string>
+    <string name="forget_password">Forget password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="home">Home</string>
+    <string name="find_match">Find Match</string>
+    <string name="profile">Profile</string>
+    <string name="welcome">Welcome</string>
+    <string name="maritialstatus">Maritial Status</string>
+    <string name="birthtime">Birthtime</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

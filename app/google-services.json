@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597524854124",
+    "project_id": "dhyaasonlinelesson",
+    "storage_bucket": "dhyaasonlinelesson.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597524854124:android:1fe1e135ac6d52dfbaef49",
+        "android_client_info": {
+          "package_name": "vishwakarma.matrimony.seva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597524854124-t5bra2d496siub6vfg3utv1elakfpn17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzNfmqmsIwxc_u12Z0TmnmeAWkMwvobY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597524854124-t5bra2d496siub6vfg3utv1elakfpn17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

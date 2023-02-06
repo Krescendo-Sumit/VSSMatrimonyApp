@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <LinearLayout
+        android:id="@+id/tp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tpbar"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="goback"
+            android:padding="10dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/karma_bold"
+            android:text="@string/newregistration"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:onClick="marathi"
+            android:padding="10dp"
+            android:text="मराठी" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   |   " />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:onClick="english"
+            android:padding="10dp"
+            android:text="English" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_title11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lang"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/karma_light"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/newregistration"
+        android:textAllCaps="true"
+        android:textColor="#050505"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_title11"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karma_light"
+                android:text="@string/select_category"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_bride"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/bride" />
+
+                <RadioButton
+                    android:id="@+id/rb_groom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/groom" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/maritialstatus"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/sp_maritialstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_field"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:ems="10"
+                    android:fontFamily="@font/karma_light"
+                    android:hint="@string/maritialstatus"
+                    android:inputType="textPersonName|textEmailAddress|textCapWords"
+                    android:padding="0dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/fullname"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_field"
+                    android:ems="10"
+                    android:fontFamily="@font/karma_light"
+                    android:hint="@string/fullname"
+                    android:inputType="textPersonName|textEmailAddress|textCapWords"
+                    android:padding="10dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/dob"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_dob"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="10"
+                    android:fontFamily="@font/karma_light"
+                    android:hint="@string/dob_only"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   " />
+
+                <EditText
+                    android:id="@+id/et_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="10"
+                    android:fontFamily="@font/karma_light"
+                    android:hint="@string/age"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:padding="2dp"
+                android:text="@string/birthtime"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_birthtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ@.1234567890_"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/birthtime"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/email"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ@.1234567890_"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/mobile"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_mobile1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/mobile"
+                android:inputType="numberSigned"
+                android:maxLength="10"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/alternativenumber"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_mobile2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/alternativenumber"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karma_light"
+                android:text="@string/have_janmpatrika"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/no" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/height"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/height"
+                android:inputType="textPersonName"
+
+                android:padding="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/skin_color"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/et_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/skin_color"
+                android:inputType="textPersonName"
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/gotra"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_gotra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/gotra"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karma_light"
+                android:text="@string/glasswearing"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_chamayes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_chamano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/no" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/qualification"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/qualification"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/job_bussiness_details"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_jobdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/job_bussiness_details"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890,"
+                android:inputType="textPersonName"
+
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/job_bussiness_address"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_joblocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/job_bussiness_address"
+                android:inputType="textPersonName"
+
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/monthly_income"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/et_month_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/monthly_income"
+                android:inputType="textPersonName"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/local_current_address"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_localadress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/local_current_address"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,1234567890"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/permanent_address"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_premanent_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/permanent_address"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karma_light"
+                android:text="@string/is_wish_to_see_janm_patrika"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_seetojanmpatrikayes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_seetojanmpatrikano"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/no" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/karma_light"
+                android:text="@string/are_you_mangal"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_ismangalyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_ismangalno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/karma_light"
+                    android:text="@string/no" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/art_favolrite_hobbies"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/art_favolrite_hobbies"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890,"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/expectations_from_partner"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_parner_requirment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/expectations_from_partner"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,1234567890"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/father_gardian_name_and_address"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_fathername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/father_gardian_name_and_address"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/father_gardian_occupation"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_father_ocupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/father_gardian_occupation"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/mother_s_full_name_before_marriage"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_mothername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/mother_s_full_name_before_marriage"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/how_many_brothers_you_have"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_totalbrother"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/how_many_brothers_you_have"
+                android:inputType="numberSigned"
+
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/brother_s_marital_status"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_brotherstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/brother_s_marital_status"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/how_many_sister_you_have"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_totalsister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/how_many_sister_you_have"
+                android:inputType="numberSigned"
+
+                android:padding="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/sister_s_marital_status"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_sisterstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/sister_s_marital_status"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/uncle_s_clan"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_mamachekul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/uncle_s_clan"
+                android:inputType="textPersonName"
+                android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:padding="10dp" />
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/enter_password"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"
+
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/confirm_password"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_upload_adhar"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field"
+                android:ems="10"
+                android:fontFamily="@font/karma_light"
+                android:padding="10dp"
+
+                android:text="Choose / Take Adhar Card Photo" />
+
+            <ImageView
+                android:id="@+id/img_adhar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txt_adharstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D84315" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/karma_light"
+                android:onClick="upload"
+                android:padding="5dp"
+                android:text="Upload Adhar File" />
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chk_termsandcondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  " />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="terms"
+                    android:text="Accept Terms And Conditions" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/karma_light"
+                android:onClick="signup"
+                android:padding="5dp"
+                android:text="@string/register" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

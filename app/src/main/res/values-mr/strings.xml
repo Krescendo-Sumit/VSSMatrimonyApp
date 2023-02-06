@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">विश्वकर्मा विवाह</string>
+    <string name="login" translatable="false">लोगिन</string>
+    <string name="newregistration">नवीन नोंदणी</string>
+    <string name="select_category">तुम्ही कोण आहात</string>
+    <string name="bride">वधू</string>
+    <string name="groom">वर</string>
+    <string name="fullname">तुमचे पूर्ण नाव</string>
+    <string name="dob">जन्म तारिख         वय</string>
+    <string name="email">इमेल </string>
+    <string name="mobile">मोबाईल नंबर</string>
+    <string name="alternativenumber">अतिरिक्त मोबाईल नंबर</string>
+    <string name="have_janmpatrika">जन्म पत्रिका आहे का?</string>
+    <string name="yes">हो</string>
+    <string name="no">नाही</string>
+    <string name="height">उंची</string>
+    <string name="skin_color">तुमचा वर्ण</string>
+    <string name="gotra">गोत्र</string>
+    <string name="qualification">शिक्षण</string>
+    <string name="job_bussiness_details">नौकरी / व्यवसाय बदल माहिती</string>
+    <string name="job_bussiness_address">नौकरी / व्यवसाय चा पत्ता</string>
+    <string name="monthly_income">वार्षिक उत्पन्न</string>
+    <string name="local_current_address">सध्याचा पत्ता</string>
+    <string name="permanent_address">मूळ पत्ता</string>
+    <string name="is_wish_to_see_janm_patrika">जन्मपत्रिका पाहणार आहात का?</string>
+    <string name="are_you_mangal">तुम्हाला मंगळ आहे का?</string>
+    <string name="art_favolrite_hobbies">कला / आवड / छंद</string>
+    <string name="expectations_from_partner">जोडीदाराकडून अपेक्षा</string>
+    <string name="father_gardian_name_and_address">वडील / पाल्य याचे नाव व पत्ता</string>
+    <string name="father_gardian_occupation">वडिलांचे / पाल्य चे व्यवसाय</string>
+    <string name="mother_s_full_name_before_marriage">आई चे लग्न आधीचे पूर्ण नाव</string>
+    <string name="how_many_brothers_you_have">तुम्हाला किती भाऊ आहेत?</string>
+    <string name="brother_s_marital_status">भावाचे लग्न झाले आहे का ?</string>
+    <string name="how_many_sister_you_have">तुम्हाला बहिण आहे का?</string>
+    <string name="sister_s_marital_status">बहिणीचे लग्न झाले आहे का?</string>
+    <string name="uncle_s_clan">मामाचे कुळ</string>
+    <string name="enter_password">तुमचा पासवर्ड टाका</string>
+    <string name="confirm_password">पासवर्ड परत टाका</string>
+    <string name="register">नोंदणी करा</string>
+    <string name="dob_only">जन्म तारिख</string>
+    <string name="age">वय</string>
+    <string name="enter_your_register_mobile_number">तुमचा नोंद केलेला मोबाईल नंबर टाका.</string>
+    <string name="forget_password">पासवर्ड विसरलात का ?</string>
+    <string name="don_t_have_an_account">तुमची नोंद नाही का?</string>
+    <string name="sign_up">नवीन नोंदणी.</string>
+    <string name="home">होम</string>
+    <string name="find_match">जोडीदार निवडा</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="welcome">नमस्कार</string>
+    <string name="glasswearing">तुम्हाला चष्मा आहे का?</string>
+    <string name="maritialstatus" >वैवाहिक दर्जा</string>
+    <string name="birthtime">जन्मवेळ</string>
+</resources>
